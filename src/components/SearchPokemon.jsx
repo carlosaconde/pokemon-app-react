@@ -1,3 +1,8 @@
+/*
+   el nombre del componente si se va a utilizar en muchos lados tiene que ser lo mas generico posible, aca es un poco al pedo el tema de que agregues pokemon ya que es redundante
+   ( en mi codigo lo hice generico solo habia que cambiar algunos nombres y listo y pasar una prop mas)
+*/
+
 import { ArrowForward, CatchingPokemon } from "@mui/icons-material"
 import { Button, InputAdornment, TextField } from "@mui/material"
 import { Box } from "@mui/system"

@@ -1,3 +1,12 @@
+/*
+  falta afinar un poco la logica pero esta bien, es al pedo hacer destructuracion aca,
+  pondrias todo en un solo state y despues irias accediento a cada valor,
+  el return nque tenes en la linea 44 esta de mas no hace nada porque vos seteas los valores en los state
+
+  no hace falta agregar el .jsx de los componentes
+
+  podrias ocualtar la primera card ya que no hay datos, despues el manejo de las flechas por id, podes hacerlo con el id que vas obteniendo del pokemon y mas sumando o restando 1
+ */
 import { useEffect, useState } from "react"
 import { FetchPokemon } from "./components/FetchPokemon.jsx";
 import { SearchPokemon } from "./components/SearchPokemon.jsx";

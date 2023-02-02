@@ -1,4 +1,12 @@
+/*
+  aca hay varias cosas, pero te voy a decir lo simple,
+  no hace falta crear const para despues enviarlas como objeto podes enviar un objeto con las keys y los valores directamente, asi ahorras espacio, 
+  la linea 14 a la 17 lo podrias hacer directamente en el return ya que devolves un obj.
 
+  la linea 9 no se usan las url crudas se usa algo llamado dot-env para los enviroment ( variables de entorno )
+
+  Algo importante, este archivo tendria que ser js y no jsx, ya que no es un componente y no tiene logica de react
+*/
 export const FetchPokemon = async (pokeName) => {
   const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
   const res = await fetch(url);
