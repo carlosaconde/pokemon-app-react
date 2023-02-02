@@ -1,19 +1,16 @@
-body{
-    
-    background-image: url('../src/img/Pokemon\ Wallpaper\ 2880x1800_11.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-
+body {
+  background-image: url("../src/img/Pokemon\ Wallpaper\ 2880x1800_11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .titulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo{
-    width: 20vw;
+.logo {
+  width: 20vw;
 }
