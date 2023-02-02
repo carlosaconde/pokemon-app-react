@@ -1,41 +1,34 @@
-import { ArrowForward, CatchingPokemon } from "@mui/icons-material"
-import { Button, InputAdornment, TextField } from "@mui/material"
+import { CatchingPokemon } from "@mui/icons-material"
+import { InputAdornment, TextField } from "@mui/material"
 import { Box } from "@mui/system"
 import { useState } from "react"
 
-export const SearchPokemon = ({ onNewPokemonName }) => {
-
-
-   const [pokeName, setPokeName] = useState('')
+export const Search = ({ onNewName, nameLabel }) => {
+   const [name, setName] = useState('')
 
    const onInputChange = (e) => {
-      setPokeName(e.target.value)
-
+      setName(e.target.value)
    }
 
    const onSubmit = (e) => {
       e.preventDefault();
-      onNewPokemonName(pokeName);
-
+      onNewName(name);
    }
 
    return (
-
       <form onSubmit={onSubmit}>
          <Box sx={{
             width: 350
          }}>
-
-
             <TextField fullWidth
                sx={{
                   mt: 10
                }}
                variant="filled"
-               label="pokemon"
+               label={nameLabel}
                type="text"
-               placeholder="buscar pokemon"
-               value={pokeName}
+               placeholder={`Buscar ${nameLabel}`}
+               value={name}
                onChange={onInputChange}
                InputProps={{
                   endAdornment: (
@@ -43,13 +36,9 @@ export const SearchPokemon = ({ onNewPokemonName }) => {
                         <CatchingPokemon fontSize="large" />
                      </InputAdornment>
                   )
-
                }}
-
             />
-
          </Box>
       </form>
-
    )
 }
