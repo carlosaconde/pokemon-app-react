@@ -1,5 +1,5 @@
-import { ArrowForward, CatchingPokemon } from "@mui/icons-material"
-import { Button, InputAdornment, TextField } from "@mui/material"
+import { CatchingPokemon } from "@mui/icons-material"
+import { InputAdornment, TextField } from "@mui/material"
 import { Box } from "@mui/system"
 import { useState } from "react"
 
@@ -28,9 +28,9 @@ export const SearchPokemon = ({onNewPokemonName}) => {
 
         
         <TextField fullWidth
-        sx={{
-         mt: 10
-        }}
+               sx={{
+                  mt: 10
+               }}
         variant="filled"
         label="pokemon"
         type="text"

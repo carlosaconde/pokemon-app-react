@@ -62,7 +62,7 @@ const handleSubStract = ()=>{
     
     <>
     <div className="titulo">
-      <h1> pokemone by charly </h1>
+      <h1> Poke App  </h1>
      <img className="logo" src="src\img\pngegg.png" alt="" />
     </div>
     

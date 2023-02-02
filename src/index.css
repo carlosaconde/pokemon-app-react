@@ -1,6 +1,7 @@
 body{
     
-    background-image: url('../src/img/Pokemon\ Wallpaper\ 2880x1800_11.jpg');
+    /* background-image: url('../src/img/Pokemon\ Wallpaper\ 2880x1800_11.jpg'); */
+    background-color:rgb(251, 197, 140);
     background-repeat: no-repeat;
     background-size: cover;
     
